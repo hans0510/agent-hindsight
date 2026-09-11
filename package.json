@@ -1,0 +1,28 @@
+{
+  "name": "agent-hindsight",
+  "version": "0.1.0",
+  "description": "Flight recorder for coding agents: record, replay and diff agent sessions across harnesses (pi, DeepSeek Harness, Claude Code).",
+  "type": "module",
+  "bin": {
+    "hindsight": "bin/hindsight.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node bin/hindsight.js open",
+    "test": "node --test"
+  },
+  "license": "MIT",
+  "keywords": [
+    "agent",
+    "coding-agent",
+    "observability",
+    "replay",
+    "diff",
+    "pi",
+    "deepseek-harness",
+    "dsh",
+    "claude-code"
+  ]
+}

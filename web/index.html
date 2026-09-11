@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>hindsight — agent session replay</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <aside id="sidebar">
+    <header>
+      <h1>✈ hindsight</h1>
+      <p class="tagline">agent session flight recorder</p>
+    </header>
+    <div id="mode-switch">
+      <button id="btn-replay" class="active">Replay</button>
+      <button id="btn-diff">Diff</button>
+    </div>
+    <div id="session-list">loading…</div>
+  </aside>
+
+  <main id="main">
+    <section id="replay-view">
+      <div id="session-header"></div>
+      <div id="timeline"><p class="empty">select a session on the left</p></div>
+    </section>
+    <section id="diff-view" class="hidden">
+      <div id="diff-picker">
+        <select id="diff-a"></select>
+        <span>vs</span>
+        <select id="diff-b"></select>
+        <button id="diff-run">Compare</button>
+      </div>
+      <div id="diff-result"></div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
